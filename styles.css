@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
-body{
+
+*{
   margin:0;
   padding:0;
+  /* box-sizing:border-box; */
   font-family: "Be Vietnam Pro", sans-serif;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 :root {
   --bgOrange: #e84949;
 }
+
 #wrapper{
-  
     height:100vh;
     overflow-y:auto;
     overflow-x: hidden;
@@ -29,18 +31,17 @@ body{
 }
 
 .logo{
-    width:60px;
-    margin-top: -1rem;
+    width:80px;
 }
 
 .logo-container{
     display:flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: baseline;
+    align-items: center;
 }
 
 .logo-text{
-    margin-left:-0.6rem;
+    margin-left:-1.2rem;
     font-size:28px;
 }
 
@@ -54,6 +55,7 @@ body{
     font-size:20px;
     font-weight:500;
     cursor:pointer;
+   
 }
 .nav-items div a{
     color:black;
@@ -125,7 +127,7 @@ a{
 }
 
 .btn-pink {
-    background-color: #e84949;
+    background-color: var(--bgOrange);
     width: fit-content;
     color: white;
     padding: 0.8rem 2.3rem;
@@ -155,7 +157,7 @@ a{
     transform: scaleX(1);
   }
   .btn-pink:hover {
-    border: solid 3px #e84949;
+    border: solid 3px var(--bgOrange);
     color: black;
   }
 
@@ -198,7 +200,8 @@ a{
     }
     
   }
-  
+
+
   .icon-dots{
     z-index:9;
     bottom:-1rem;
@@ -293,7 +296,7 @@ a{
   }
 
   .page-header{
-    color:#e84949;
+    color:var(--bgOrange);
     font-size:90px;
     text-align:center;
     padding-top:30px;
@@ -311,7 +314,7 @@ a{
   .project-card{
     width:90%;
     height:550px;
-    /*background-image: url(./images/projects/Project1.png);*/
+    background-image: url(./images/projects/Project1.png);
     background-size: cover;
     /* background-repeat: no-repeat; */
     position:relative;
@@ -437,7 +440,7 @@ a{
   }
 
   .icon:hover{
-    color: #e84949;
+    color:var(--bgOrange);
   }
 
   .project-card:hover .project-content{
@@ -455,11 +458,15 @@ a{
   #project3{
     background-image: url(./images/projects/Project3.png);
   }
+  #project4{
+    margin-left:120px;
+    background-image: url(./images/projects/Project4.png);
+  }
 
   @media (max-width:1300px) {
     .page-header {
       padding-top: 30px;
-      color: #e84949;
+      color: var(--bgOrange);
       text-align: center;
       font-size: 40px;
     }
@@ -477,7 +484,7 @@ a{
       background-position: center;
     }
     .project-content {
-      transform: scale(0.5);
+      scale: 0.5;
       bottom: 0;
       left: 0;
       right: 0;
@@ -496,7 +503,9 @@ a{
     #project2 {
       margin-left: 0;
     }
-
+    #project4 {
+      margin-left: 0;
+    }
     .project-skill-container {
       width: 100%;
     }
@@ -507,7 +516,7 @@ a{
       display: none;
     }
     .project-card:hover .project-content {
-     transform: scale(0.55);
+      scale: 0.55;
     }
   }
 
@@ -520,7 +529,7 @@ a{
   }
 
 .skill-container-left{
-  width:60%;
+  width:50%;
   display:flex;
   flex-direction:column;
 }
@@ -528,7 +537,7 @@ a{
 .skill-container-right{
   display:flex;
   flex-wrap:wrap;
-  width:30%;
+  width:50%;
   position:relative;
   gap:2rem;
   justify-content: center;
@@ -537,10 +546,10 @@ a{
 .skill-fade-text{
   position:absolute;
   font-size:15em;
-  font-weight: bold;
+  font-style:bold;
   color:rgb(231,231,231);
   bottom:-34.5%;
-  right:-.09%;
+  right:-25%;
   user-select:none;
   overflow-y:hidden;
 }
@@ -562,7 +571,7 @@ a{
 }
 
 .skills-logo{
- width: 90px;
+  width:90px;
   transition:all 0.5s;
 }
 
@@ -572,8 +581,8 @@ a{
 
 .skill-heading{
   font-size:50px;
-  font-weight: bold;
-  color: #e84949;
+  font-style: bold;
+  color: var(--bgOrange);
   line-height: 50px;
 }
 
@@ -598,7 +607,7 @@ a{
 
 .contactus-heading{
   font-size:5em;
-  color: #e84949;
+  color:var(--bgOrange);
   padding-top: 2rem;
 }
 
@@ -651,7 +660,7 @@ a{
 }
 
 #submit-btn:hover{
-transform: scale(0.9);
+  scale:0.9;
 }
 
 .submit-icon{
@@ -694,7 +703,7 @@ footer{
 }
 
 .link-wrapper div a:hover{
-  color:#e84949;
+  color:var(--bgOrange);
 }
 
 .icon-wrapper{
