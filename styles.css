@@ -31,17 +31,18 @@
 }
 
 .logo{
-    width:80px;
+    width:60px;
+    margin-top: -1rem;
 }
 
 .logo-container{
     display:flex;
     justify-content: baseline;
-    align-items: center;
+    align-items:center;
 }
 
 .logo-text{
-    margin-left:-1.2rem;
+    margin-left:-0.6rem;
     font-size:28px;
 }
 
@@ -55,7 +56,6 @@
     font-size:20px;
     font-weight:500;
     cursor:pointer;
-   
 }
 .nav-items div a{
     color:black;
@@ -458,10 +458,6 @@ a{
   #project3{
     background-image: url(./images/projects/Project3.png);
   }
-  #project4{
-    margin-left:120px;
-    background-image: url(./images/projects/Project4.png);
-  }
 
   @media (max-width:1300px) {
     .page-header {
@@ -503,9 +499,7 @@ a{
     #project2 {
       margin-left: 0;
     }
-    #project4 {
-      margin-left: 0;
-    }
+
     .project-skill-container {
       width: 100%;
     }
@@ -529,7 +523,7 @@ a{
   }
 
 .skill-container-left{
-  width:50%;
+  width:60%;
   display:flex;
   flex-direction:column;
 }
@@ -537,7 +531,7 @@ a{
 .skill-container-right{
   display:flex;
   flex-wrap:wrap;
-  width:50%;
+  width:30%;
   position:relative;
   gap:2rem;
   justify-content: center;
@@ -549,7 +543,7 @@ a{
   font-style:bold;
   color:rgb(231,231,231);
   bottom:-34.5%;
-  right:-25%;
+  right:-.09%;
   user-select:none;
   overflow-y:hidden;
 }
@@ -571,7 +565,7 @@ a{
 }
 
 .skills-logo{
-  width:90px;
+ width: 90px;
   transition:all 0.5s;
 }
 
