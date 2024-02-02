@@ -178,6 +178,7 @@ a{
 
   .user-image img{
     z-index:-9;
+    max-height: 26rem;
   }
 
   @keyframes scaleImage {
